@@ -45,14 +45,10 @@
     <div id = "2" class="carousel-item">
       <img  src="2.jpg" class="d-block w-100" alt="...">
     </div>
-   
-  </div>
+ </div>
  
  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-
-
 <div class = "element">
-
 <button class="prev" type="button"  data-bs-slide="prev">
    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 Prev
@@ -67,29 +63,18 @@ Prev
 </button>
 </div>
  </div>
-
 </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-
     <script>
-
-//const myCarousel = document.querySelector('.carousel');
-//myCarousel.setAttribute('data-bs-interval','2000');
-/*const carousel = new bootstrap.Carousel(myCarousel)
-console.log(carousel);
-carousel.inter*/
-//console.log(myCarousel);
-//myCarousel.setIterval = 1000;
 
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
 const oneButton = document.querySelector('.one');
 const twoButton = document.querySelector('.two');
-console.log(prevButton);
-//const n=1;
+
 prevButton.addEventListener('click', function () {
   console.log("hello World");
   for (var n = 1; n < 3; n++) {
@@ -97,7 +82,6 @@ prevButton.addEventListener('click', function () {
         console.log(imageEl);
         imageEl.classList.toggle('active');    
   }
-  
 });
 
 nextButton.addEventListener('click', function () {
@@ -131,12 +115,6 @@ twoButton.addEventListener('click', function () {
   const imageEl2 = document.getElementById('2');
   imageEl2.classList.add('active'); 
 });
-
-
-/*myCarousel.addEventListener('slide.bs.carousel', function () {
-  console.log("hello");
-  
-})*/
 
     </script>
 </body>
